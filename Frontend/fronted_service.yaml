@@ -1,0 +1,10 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: client
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+      - image: docker.io/b6009793/client:v6
